@@ -1,0 +1,39 @@
+.home {
+  .header {
+    text-align: center;
+
+    background-color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    .logo {
+      max-width: 120px;
+      width: 100%;
+    }
+  }
+  .bio {
+    background-color: white;
+    .portrait {
+      width: 100%;
+    }
+  }
+  .recent-projects {
+    background-color: white;
+
+    .project-img {
+      width: 100%;
+    }
+  }
+  .favorites {
+    background-color: white;
+    text-align: center;
+
+    .fav-img {
+      width: 100%;
+    }
+    .hr {
+      height: 1px;
+      width: 50%;
+      padding: 17px;
+    }
+  }
+}
