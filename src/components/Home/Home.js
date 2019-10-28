@@ -34,20 +34,39 @@ export default class Home extends Component {
       <div className="home">
         <ParallaxLayer
           offset={0}
-          speed={0}
+          speed={-0.1}
+          factor={3}
           style={{
             backgroundImage: `url(${parallax_landing})`,
-            backgroundSize: "cover"
+            backgroundSize: "100%"
           }}
         />
         <ParallaxLayer
           offset={1}
-          speed={0}
+          speed={-0.1}
+          factor={3}
           style={{
             backgroundImage: `url(${parallax_design})`,
+            backgroundSize: "100%"
+          }}
+        />
+        <ParallaxLayer
+          offset={2.4}
+          speed={-0.1}
+          style={{
+            backgroundImage: `url(${parallax_photography})`,
             backgroundSize: "cover"
           }}
         />
+        <ParallaxLayer offset={1.5} speed={-0.2}>
+          <div className="container">
+            <div className="row justify-content-center">
+              <a href="/graphicdesign" className="design btn btn-white">
+                DESIGN
+              </a>
+            </div>
+          </div>
+        </ParallaxLayer>
         <ParallaxLayer offset={0.9} speed={0.5}>
           <div className="bio">
             <div className="container">
@@ -73,23 +92,7 @@ export default class Home extends Component {
             </div>
           </div>
         </ParallaxLayer>
-        <ParallaxLayer offset={1.5} speed={1}>
-          <div className="container">
-            <div className="row justify-content-center">
-              <a href="/graphicdesign" className="design btn btn-white">
-                DESIGN
-              </a>
-            </div>
-          </div>
-        </ParallaxLayer>
-        <ParallaxLayer
-          offset={2.4}
-          speed={0}
-          style={{
-            backgroundImage: `url(${parallax_photography})`,
-            backgroundSize: "cover"
-          }}
-        />
+
         <ParallaxLayer offset={1.9} speed={0.5}>
           <div className="recent-projects">
             <div className="container">
@@ -149,7 +152,9 @@ export default class Home extends Component {
                   </div>
                 </div>
                 <div className="col-4">
-                  <img className="project-img" src={rp_westhills} alt="RA" />
+                  <div className="crop">
+                    <img className="project-img" src={rp_westhills} alt="RA" />
+                  </div>
                   <div className="caption">
                     <p className="rp-header">WEST HILLS LOGO</p>
                     <p className="rp-desc">
@@ -174,7 +179,7 @@ export default class Home extends Component {
             </div>
           </div>
         </ParallaxLayer>
-        <ParallaxLayer offset={2.9} speed={0.2}>
+        <ParallaxLayer offset={2.9} speed={-0.2}>
           <div className="container">
             <div className="row justify-content-center">
               <a href="/photography" className="photography btn btn-white">
@@ -263,7 +268,7 @@ export default class Home extends Component {
             </div>
           </div>
         </ParallaxLayer>
-        <ParallaxLayer offset={6.7} speed={0.5} factor={0.5}>
+        <ParallaxLayer offset={6.7} speed={0.6} factor={0.5}>
           <div className="connect">
             <div className="container">
               <h4 className="c-title">CONNECT</h4>
