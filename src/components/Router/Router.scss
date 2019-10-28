@@ -1,0 +1,11 @@
+.navbar {
+  font-family: "Freight Big Pro";
+  &.bg-light {
+    background-color: transparent !important;
+  }
+  .nav-link {
+    font-size: 16px;
+    font-weight: 500;
+    color: rgba(50, 82, 72, 0.5) !important;
+  }
+}
