@@ -1,5 +1,8 @@
 import React, { Component } from "react";
-
+import { ParallaxLayer } from "react-spring/renderprops-addons";
+import { DesignRows } from "../../Utils/Helpers";
+import "./GraphicDesign.scss";
+import Footer from "../Footer/Footer";
 export default class GraphicDesign extends Component {
   componentDidMount() {
     document.title = this.props.title;
@@ -7,23 +10,15 @@ export default class GraphicDesign extends Component {
 
   render() {
     return (
-      <div className="container">
-        <h1>Graphic Design</h1>
-        <div className="row">
-          <div className="col-4">
-            <img src="" alt="under construction" className="project-img" />
-            <p className="img-desc">Missions Conference | design suite</p>
+      <ParallaxLayer offset={0.3} speed={0.3}>
+        <div className="graphic-design">
+          <div className="title text-center">
+            <h1>Graphic Design</h1>
           </div>
-          <div className="col-4">
-            <img src="" alt="under construction" className="project-img" />
-            <p className="img-desc">Missions Conference | design suite</p>
-          </div>
-          <div className="col-4">
-            <img src="" alt="under construction" className="project-img" />
-            <p className="img-desc">Missions Conference | design suite</p>
-          </div>
+          {DesignRows}
         </div>
-      </div>
+        <Footer />
+      </ParallaxLayer>
     );
   }
 }

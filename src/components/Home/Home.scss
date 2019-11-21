@@ -1,9 +1,6 @@
 @import "../../resources/styles/global.scss";
 .home {
   font-family: freight-big-pro;
-  img {
-    // width: 100%;
-  }
   .header {
     text-align: center;
 
@@ -90,20 +87,35 @@
       font-weight: 300;
       line-height: 37.4px;
     }
+    .fav-row {
+      margin-bottom: 30px;
+    }
     .crop-single {
       max-width: 876px;
       overflow: hidden;
       .fav-img {
         height: 800px;
         margin-left: -60px;
+        &.left357 {
+          margin-left: -357px;
+        }
       }
     }
     .crop-double {
       width: 100%;
-      max-height: 390px;
+      max-height: 385px;
       overflow: hidden;
+      &.top {
+        margin-bottom: 30px;
+      }
       .fav-img {
         width: 584px;
+        &.extended {
+          width: 596px;
+        }
+        &.left115 {
+          margin-left: -115px;
+        }
       }
     }
 

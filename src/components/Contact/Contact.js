@@ -30,7 +30,7 @@ export default class Contact extends Component {
           </Form.Group>
 
           <Button className="submit btn-black" type="submit">
-            Submit
+            SUBMIT
           </Button>
         </Form>
       </div>

@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import { Parallax, ParallaxLayer } from "react-spring/renderprops-addons";
-import { Navbar, Nav, Container } from "react-bootstrap";
+import { Parallax } from "react-spring/renderprops-addons";
 
 import Home from "../Home/Home";
 import About from "../About/About";
@@ -17,9 +16,11 @@ export default class Router extends Component {
     const loc = window.location.href;
     if (loc.includes("about")) {
       console.log("about");
-      return 1.5;
-    } else if (loc.includes("graphic-design")) {
-      return 3;
+      return 2.4;
+    } else if (loc.includes("graphicdesign")) {
+      return 3.5;
+    } else if (loc.includes("photography")) {
+      return 2.2;
     } else {
       return 7.3;
     }
@@ -47,28 +48,90 @@ export default class Router extends Component {
             <Route path="/photography">
               <Photography title={"Photography" + titleEnd} />
             </Route>
+            <Route path="/gs-missions-conference">
+              <div>UnderConstruction</div>
+            </Route>
+            <Route path="/prayknox">
+              <div>UnderConstruction</div>
+            </Route>
+            <Route path="/love-your-neighbor">
+              <div>UnderConstruction</div>
+            </Route>
+            <Route path="/go-conference-2017">
+              <div>UnderConstruction</div>
+            </Route>
+            <Route path="/first-30-daze">
+              <div>UnderConstruction</div>
+            </Route>
+            <Route path="/fire-fall-today">
+              <div>UnderConstruction</div>
+            </Route>
+            <Route path="/united-camp">
+              <div>UnderConstruction</div>
+            </Route>
+            <Route path="/family-remix">
+              <div>UnderConstruction</div>
+            </Route>
+            <Route path="/west-hills-logo">
+              <div>UnderConstruction</div>
+            </Route>
+            <Route path="/united-wknd">
+              <div>UnderConstruction</div>
+            </Route>
+            <Route path="/the-fight">
+              <div>UnderConstruction</div>
+            </Route>
+            <Route path="/difference-maker">
+              <div>UnderConstruction</div>
+            </Route>
+            <Route path="/grecian-honeymoon">
+              <div>UnderConstruction</div>
+            </Route>
+            <Route path="/hopkins-shower-invite">
+              <div>UnderConstruction</div>
+            </Route>
+            <Route path="/concord-outdoors">
+              <div>UnderConstruction</div>
+            </Route>
+            <Route path="/solemn-assembly">
+              <div>UnderConstruction</div>
+            </Route>
+            <Route path="/real-grit">
+              <div>UnderConstruction</div>
+            </Route>
+            <Route path="/brunei">
+              <div>UnderConstruction</div>
+            </Route>
+            <Route path="/jakarta">
+              <div>UnderConstruction</div>
+            </Route>
+            <Route path="/malaysia">
+              <div>UnderConstruction</div>
+            </Route>
+            <Route path="/laos">
+              <div>UnderConstruction</div>
+            </Route>
+            <Route path="/lombok">
+              <div>UnderConstruction</div>
+            </Route>
+            <Route path="/loy-krathong">
+              <div>UnderConstruction</div>
+            </Route>
+            <Route path="/medan">
+              <div>UnderConstruction</div>
+            </Route>
+            <Route path="/thailand">
+              <div>UnderConstruction</div>
+            </Route>
+            <Route path="/behanhopkins-wedding">
+              <div>UnderConstruction</div>
+            </Route>
             <Route path="/">
               <Home />
             </Route>
           </Switch>
 
-          <ParallaxLayer offset={0} speed={0.5}>
-            <Header />
-            <Container>
-              <Navbar bg="light" expand="lg">
-                <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                <Navbar.Collapse id="basic-navbar-nav">
-                  <Nav className="mx-auto">
-                    <Nav.Link href="/">Home</Nav.Link>
-                    <Nav.Link href="/about">About</Nav.Link>
-                    <Nav.Link href="/graphicdesign">Graphic Design</Nav.Link>
-                    <Nav.Link href="/photography">Photography</Nav.Link>
-                    <Nav.Link href="/blog">Blog</Nav.Link>
-                  </Nav>
-                </Navbar.Collapse>
-              </Navbar>
-            </Container>
-          </ParallaxLayer>
+          <Header />
         </BrowserRouter>
       </Parallax>
     );

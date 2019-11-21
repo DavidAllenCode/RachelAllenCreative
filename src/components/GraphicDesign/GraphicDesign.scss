@@ -1,0 +1,62 @@
+.graphic-design {
+  font-family: freight-big-pro;
+  margin: 40px 100px;
+  .title {
+    margin-bottom: 34px;
+    h1 {
+      color: rgba(51, 51, 51, 0.7);
+      font-size: 40px;
+      font-weight: 300;
+      letter-spacing: 0.8px;
+      line-height: 60px;
+    }
+  }
+
+  .crop {
+    max-height: 480px;
+    height: 100%;
+    overflow: hidden;
+    .gp-image {
+      //   height: 100%;
+      width: 100%;
+      &.neighbor {
+        height: 761px;
+        width: auto;
+        margin-top: -140px;
+      }
+      &.d-maker {
+        height: 480px;
+        width: auto;
+        margin-left: -140px;
+      }
+      &.g-shower {
+        height: 672px;
+        width: auto;
+        margin-top: -95px;
+      }
+      &.w-shower {
+        height: 480px;
+        width: auto;
+      }
+      &.c-outdoors {
+        height: 480px;
+        width: auto;
+        margin-left: -70px;
+      }
+      &.s-assembly {
+        height: 480px;
+        width: auto;
+        margin-left: -195px;
+      }
+    }
+  }
+  .img-desc {
+    color: rgba(51, 51, 51, 0.5);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 900;
+    letter-spacing: 0.95px;
+    line-height: 38px;
+    margin-top: 7px;
+  }
+}

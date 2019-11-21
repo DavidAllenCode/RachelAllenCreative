@@ -1,0 +1,88 @@
+.about {
+  margin: 40px 100px;
+  font-family: freight-big-pro;
+  .about-me {
+    margin-left: 70px;
+  }
+
+  .title {
+    font-size: 65px;
+    font-weight: 300;
+    letter-spacing: 0.02em;
+    line-height: 1.3em;
+    padding-top: 74px;
+  }
+  .desc {
+    font-weight: 400;
+    letter-spacing: 1.423px;
+    line-height: 56.93px;
+    font-size: 29px;
+    color: rgba(51, 51, 51, 0.5);
+  }
+  .img-overlay {
+    background-color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 15px;
+    right: 15px;
+    bottom: 0;
+  }
+  .about-row {
+    margin-bottom: 68px;
+  }
+  .skills {
+    .head {
+      color: rgba(51, 51, 51, 0.8);
+      font-size: 22px;
+      font-weight: 300;
+      letter-spacing: 0.88px;
+      line-height: 37.4px;
+    }
+    .description {
+      color: rgba(51, 51, 51, 0.8);
+      font-family: filson-pro;
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 1.1px;
+      line-height: 24.2px;
+      padding-bottom: 17px;
+    }
+  }
+  .skill-title {
+    color: rgba(51, 51, 51, 0.8);
+    font-family: filson-pro;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 1.1px;
+    line-height: 24.2px;
+    padding-bottom: 11px;
+  }
+  .skill-sub {
+    color: rgba(51, 51, 51, 0.5);
+    font-size: 19px;
+    font-weight: 900;
+    letter-spacing: 0.95px;
+    line-height: 38px;
+  }
+
+  .bottom {
+    margin-top: 70px;
+    .git {
+      color: rgba(51, 51, 51, 0.8);
+      font-size: 22px;
+      font-weight: 300;
+      letter-spacing: 0.88px;
+      line-height: 37.4px;
+    }
+    .git-sub {
+      color: rgba(51, 51, 51, 0.8);
+      font-family: filson-pro;
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 1.1px;
+      line-height: 24.2px;
+      padding-bottom: 20px;
+    }
+  }
+}

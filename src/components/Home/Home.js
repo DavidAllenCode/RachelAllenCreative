@@ -11,19 +11,8 @@ import {
   rp_unitedcamp,
   rp_westhills,
   rp_summer17,
-  fav_babymoto,
-  fav_girlcovered,
-  fav_manboat,
-  fav_manhat,
-  fav_manlean,
-  fav_monk,
-  fav_peoplewaving,
-  fav_temple,
-  fav_womangrill,
-  fav_womanhat,
-  fav_womanpray,
-  fav_womansitting,
-  fav_man
+  FavoriteRows,
+  FavoriteRow
 } from "../../Utils/Helpers";
 import "./Home.scss";
 import Contact from "../Contact/Contact";
@@ -191,71 +180,7 @@ export default class Home extends Component {
         <ParallaxLayer offset={3} speed={0.5} factor={5.2}>
           <div className="favorites">
             <h4 className="fav-title">A Few Favorites</h4>
-            <div className="row pb-5">
-              <div className="col-7">
-                <div className="crop-single">
-                  <img className="fav-img " src={fav_womanhat} alt="RA" />
-                </div>
-              </div>
-              <div className="col-4 offset-1">
-                <div className="crop-double mb-4">
-                  <img className="fav-img " src={fav_girlcovered} alt="RA" />
-                </div>
-                <div className="crop-double">
-                  <img className="fav-img" src={fav_womanpray} alt="RA" />
-                </div>
-              </div>
-            </div>
-            <div className="row pb-5">
-              <div className="col-4">
-                <div className="crop-double mb-4">
-                  <img className="fav-img " src={fav_manhat} alt="RA" />
-                </div>
-                <div className="crop-double">
-                  <img className="fav-img" src={fav_manboat} alt="RA" />
-                </div>
-              </div>
-              <div className="col-7 offset-1">
-                <div className="crop-single">
-                  <img className="fav-img " src={fav_manlean} alt="RA" />
-                </div>
-              </div>
-            </div>
-            <div className="row pb-5">
-              <div className="col-7">
-                <div className="crop-single">
-                  <img className="fav-img " src={fav_temple} alt="RA" />
-                </div>
-              </div>
-              <div className="col-4 offset-1">
-                <div className="crop-double mb-4">
-                  <img className="fav-img " src={fav_monk} alt="RA" />
-                </div>
-                <div className="crop-double">
-                  <img className="fav-img" src={fav_peoplewaving} alt="RA" />
-                </div>
-              </div>
-            </div>
-            <div className="row pb-5">
-              <div className="col-4">
-                <div className="crop-double mb-4">
-                  <img className="fav-img " src={fav_womansitting} alt="RA" />
-                </div>
-                <div className="crop-double">
-                  <img className="fav-img" src={fav_man} alt="RA" />
-                </div>
-              </div>
-              <div className="col-7 offset-1">
-                <div className="crop-single">
-                  <img className="fav-img " src={fav_babymoto} alt="RA" />
-                </div>
-              </div>
-            </div>
-            <div className="row pb-5">
-              <div className="col-12">
-                <img className="fav-img w-100" src={fav_womangrill} alt="RA" />
-              </div>
-            </div>
+            {FavoriteRows}
             <div className="link-div">
               <a href="/photography" className="btn btn-black design-portfolio">
                 PHOTOGRAPHY PORTFOLIO
@@ -267,8 +192,6 @@ export default class Home extends Component {
               </div>
             </div>
           </div>
-        </ParallaxLayer>
-        <ParallaxLayer offset={6.7} speed={0.6} factor={0.5}>
           <div className="connect">
             <div className="container">
               <h4 className="c-title">CONNECT</h4>
